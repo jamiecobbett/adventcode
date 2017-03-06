@@ -1,9 +1,13 @@
 # TriangleValidator
 
-This project implements a class to validate triangle specifications, in the form of side lengths.
+This project provides a script that counts the number of valid triangles in a file, where
+
+> In a valid triangle, the sum of any two sides must be larger than the remaining side. For example, the "triangle" given above is impossible, because 5 + 10 is not larger than 25.
 
 See:
 http://adventofcode.com/2016/day/3
+
+See data/input.txt for an example of the file format.
 
 ## Installation
 
