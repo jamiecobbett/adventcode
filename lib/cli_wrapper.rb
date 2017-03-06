@@ -1,4 +1,4 @@
-require 'triangle_validator'
+require_relative './triangle_validator'
 
 class CliWrapper
   def initialize(filepath)
