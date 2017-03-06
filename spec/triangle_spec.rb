@@ -25,12 +25,26 @@ RSpec.describe TriangleValidator do
         expect(validator.valid?(sides)).to eq(false)
       end
     end
+
+    context "the smallest possible invalid triangle" do
+      it "should be invalid" do
+        sides = [1, 2, 4]
+        expect(validator.valid?(sides)).to eq(false)
+      end
+    end
   end
 
   context "valid triangles" do
     context "a valid triangle" do
       it "should be valid" do
         sides = [5, 21, 25]
+        expect(validator.valid?(sides)).to eq(true)
+      end
+    end
+
+    context "the smallest possible invalid triangle" do
+      it "should be valid" do
+        sides = [2, 2, 3]
         expect(validator.valid?(sides)).to eq(true)
       end
     end
