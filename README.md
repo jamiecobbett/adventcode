@@ -23,6 +23,18 @@ Then install the project dependencies:
 bundle install
 ```
 
+## Running the script
+
+```bash
+./bin/triangle_validator path/to/file.txt
+```
+
+For example:
+
+```bash
+./bin/triangle_validator data/input.txt
+```
+
 ## Running tests
 
 ```bash
